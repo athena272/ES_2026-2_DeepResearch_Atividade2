@@ -88,6 +88,7 @@ O servidor pode ser **vLLM local**, **OpenRouter**, ou qualquer provedor que imp
 - Usar **Bridge** se existirem múltiplas dimensões de variação (ex: LLM provider + formato de tool calling).
 
 ### Risco
+
 **Médio** – O *Adapter* via OpenAI-compatible mitiga problemas imediatos, mas o acoplamento direto ao SDK oficial cria engessamento. A ausência de adaptadores para as ferramentas de busca torna a troca de provedor (ex: sair do Serper para o Google) custosa, exigindo alteração em vários arquivos e falhando no "Teste da Troca".
 ---
 
