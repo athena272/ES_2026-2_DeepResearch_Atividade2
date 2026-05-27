@@ -1,8 +1,29 @@
 # ES_2026-2_DeepResearch_Atividade2
 
-# Análise de Padrões GoF no Agente de Inferência
+Repositório de trabalho da **Equipe 1** para a **Atividade 2** (Auditoria Forense de Software e Plano de Resgate Técnico) — projeto analisado: [Alibaba-NLP/DeepResearch](https://github.com/Alibaba-NLP/DeepResearch).
 
-> Parte 5 — GoF no agente e nas fronteiras (criacional, estrutural, comportamental)
+Atividade 1 (contexto): [ES_2026-2_DeepResearch](https://github.com/athena272/ES_2026-2_DeepResearch).
+
+---
+
+## Índice das partes (Atividade 2)
+
+| Parte | Eixo | Responsável | Documento |
+|-------|------|-------------|-----------|
+| **1** | GPR — Arqueologia de issues | Guilherme Rosário Alves | [docs/parte1-arqueologia-issues.md](docs/parte1-arqueologia-issues.md) · [trecho PDF](docs/relatorio-pdf-parte1.md) |
+| 2 | GPR — Ritmo de entrega e PRs | *(equipe)* | *(a publicar)* |
+| 3 | SOLID — Teste da troca (DIP) | *(equipe)* | *(a publicar)* |
+| 4 | SOLID — SRP e DRY | *(equipe)* | *(a publicar)* |
+| **5** | GoF — Agente e fronteiras | *(colega)* | Seção abaixo neste README |
+| 6 | Plano de resgate + MPS.BR G | *(equipe)* | *(a publicar)* |
+
+### Evidências visuais (Parte 1)
+
+Prints do GitHub: pasta [assets/parte1/](assets/parte1/) — ver [checklist de capturas](assets/parte1/README.md).
+
+---
+
+# Parte 5 — GoF no agente e nas fronteiras (criacional, estrutural, comportamental)
 
 Este documento analisa o núcleo de inferência e a orquestração do agente (`inference/react_agent.py`) sob a ótica dos padrões de projeto GoF, identificando como as dependências são gerenciadas, como o sistema se comunica com o mundo exterior e como o fluxo de decisão interno é estruturado.
 
@@ -62,7 +83,7 @@ O repositório usa uma estratégia de **Adapter** via protocolo OpenAI-compatibl
 def call_server(self, msgs, planning_port, max_tries=10):
         
     openai_api_key = "EMPTY"
-    openai_api_base = f"[http://127.0.0.1](http://127.0.0.1):{planning_port}/v1"
+    openai_api_base = f"http://127.0.0.1:{planning_port}/v1"
 
     client = OpenAI(
         api_key=openai_api_key,
