@@ -14,7 +14,7 @@ Atividade 1 (contexto): [ES_2026-2_DeepResearch](https://github.com/athena272/ES
 | 2 | GPR — Ritmo de entrega e PRs | *(equipe)* | *(a publicar)* |
 | 3 | SOLID — Teste da troca (DIP) | *(equipe)* | *(a publicar)* |
 | 4 | SOLID — SRP e DRY | *(equipe)* | *(a publicar)* |
-| **5** | GoF — Agente e fronteiras | *(colega)* | Seção abaixo neste README |
+| **5** | GoF — Agente e fronteiras | Davi Emanuel de Menezes Costa | Seção abaixo neste README |
 | 6 | Plano de resgate + MPS.BR G | *(equipe)* | *(a publicar)* |
 
 ### Evidências visuais (Parte 1)
