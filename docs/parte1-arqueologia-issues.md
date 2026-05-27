@@ -78,7 +78,7 @@ flowchart LR
 
 | | |
 |---|---|
-| **Evidência** | [Issue #88](https://github.com/Alibaba-NLP/DeepResearch/issues/88) — aberta em **2025-09-01** por [@2132660698](https://github.com/2132660698) (associação: NONE, usuário externo). Título: *“WebWatcher相关的代码找不到”*. Corpo (traduzido): pergunta se o código citado na documentação já foi publicado e onde encontrá-lo. Print sugerido: `assets/parte1/issue-88-abertura.png`. |
+| **Evidência** | [Issue #88](https://github.com/Alibaba-NLP/DeepResearch/issues/88) — aberta em **2025-09-01** por [@2132660698](https://github.com/2132660698) (associação: NONE, usuário externo). Título: *“WebWatcher相关的代码找不到”*. Corpo (traduzido): pergunta se o código citado na documentação já foi publicado e onde encontrá-lo. Evidência visual: [issue-88-abertura](../assets/parte1/README.md#issue-88-abertura). |
 | **Diagnóstico** | O relato trata de **localizabilidade** do artefato, não de um bug pontual. Isso expõe ambiguidade entre “projeto anunciado no paper/README” e “código executável no repositório”. Não há template de issue pedindo caminho, versão ou critério de “publicado”. |
 | **Recomendação** | Adotar template de issue do tipo *“missing artifact”* com campos: artefato esperado (código / dados / demo), URL ou seção do README citada, commit ou tag em que o usuário esperava encontrar o material. |
 | **Risco** | **Médio** — sem escopo explícito, a equipe mantenedora e a comunidade falam de coisas diferentes (docs vs inferência). |
@@ -89,7 +89,7 @@ flowchart LR
 
 | | |
 |---|---|
-| **Evidência** | Thread em [#88](https://github.com/Alibaba-NLP/DeepResearch/issues/88#issuecomment-3265053395): em **2025-09-08**, [@wangxinyu0922](https://github.com/wangxinyu0922) (MEMBER) responde: *“我们还在整理相关的推理代码，预计这个月发布”* (“ainda estamos organizando o código de inferência relacionado; previsão de publicar **este mês**”). Entre set e out, vários comentários “同问” (mesma pergunta) de outros usuários; em **2025-10-21**, [@iyuge2](https://github.com/iyuge2) cobra novamente o prazo. Prints: `assets/parte1/issue-88-comentario-set.png`, `assets/parte1/issue-88-comentario-out.png`. |
+| **Evidência** | Thread em [#88](https://github.com/Alibaba-NLP/DeepResearch/issues/88#issuecomment-3265053395): em **2025-09-08**, [@wangxinyu0922](https://github.com/wangxinyu0922) (MEMBER) responde: *“我们还在整理相关的推理代码，预计这个月发布”* (“ainda estamos organizando o código de inferência relacionado; previsão de publicar **este mês**”). Entre set e out, vários comentários “同问” (mesma pergunta) de outros usuários; em **2025-10-21**, [@iyuge2](https://github.com/iyuge2) cobra novamente o prazo. Evidências visuais: [comentário set/2025](../assets/parte1/README.md#issue-88-comentario-set), [cobrança out/2025](../assets/parte1/README.md#issue-88-comentario-out). |
 | **Diagnóstico** | A discussão **redefine o escopo** da entrega: não é só “código WebWatcher”, e sim **código de inferência** (`推理代码`). A promessa temporal (“este mês” = setembro/2025) não se cumpre na percepção dos usuários; a entrega efetiva do núcleo `infer/` ocorre em **novembro** (commits `6d2eeae`, `dc87c85`). Há **mudança de escopo no tempo** sem atualizar a issue com checklist ou milestone. |
 | **Recomendação** | Em issues de release, registrar milestone com data revisada, lista de artefatos (infer, benchmark, README) e comentário fixado (pinned) quando o escopo mudar. Prática GPR: **monitoramento** de compromissos públicos. |
 | **Risco** | **Alto** — quebra de confiança da comunidade; usuários não conseguem planejar reprodução de resultados do paper. |
@@ -100,7 +100,7 @@ flowchart LR
 
 | | |
 |---|---|
-| **Evidência** | [PR #74](https://github.com/Alibaba-NLP/DeepResearch/pull/74) (*“webwatcher is coming”*, merge **2025-08-06**): altera `README.md` e adiciona `assets/road_map_webwatcher.png` (2 arquivos). [PR #78](https://github.com/Alibaba-NLP/DeepResearch/pull/78) (*“Update README.md”*, **2025-08-13**): body *“更新webwatcher状态”*. [PR #80](https://github.com/Alibaba-NLP/DeepResearch/pull/80) (título interno *“Patch 1”*, mensagem de merge *“release WebWatcher”*, **2025-08-15**): **body nulo**, merged por [@callanwu](https://github.com/callanwu), **0 comentários de review** (API GitHub). Print: `assets/parte1/pr-80-merge.png`. |
+| **Evidência** | [PR #74](https://github.com/Alibaba-NLP/DeepResearch/pull/74) (*“webwatcher is coming”*, merge **2025-08-06**): altera `README.md` e adiciona `assets/road_map_webwatcher.png` (2 arquivos). [PR #78](https://github.com/Alibaba-NLP/DeepResearch/pull/78) (*“Update README.md”*, **2025-08-13**): body *“更新webwatcher状态”*. [PR #80](https://github.com/Alibaba-NLP/DeepResearch/pull/80) (título interno *“Patch 1”*, mensagem de merge *“release WebWatcher”*, **2025-08-15**): **body nulo**, merged por [@callanwu](https://github.com/callanwu), **0 comentários de review** (API GitHub). Evidência visual: [pr-80-merge](../assets/parte1/README.md#pr-80-merge). |
 | **Diagnóstico** | Os merges de agosto comunicam **lançamento** no nível de documentação/roadmap, **não** entrega do que a issue #88 pedirá semanas depois (inferência). Títulos de PR e mensagens de commit criam **falsa sensação de completude** para quem só lê o histórico superficial. Nenhum PR referencia #88 (ainda inexistente) nem descreve o que falta entregar. |
 | **Recomendação** | Separar PRs de *docs/announcement* de PRs de *code release*; no título ou label usar `docs` vs `feat(webwatcher-infer)`. Exigir descrição mínima no PR (o que entra, o que fica de fora). |
 | **Risco** | **Alto** — desalinhamento entre narrativa de “release” e artefato executável; reforça o achado da A1 sobre ausência de **releases versionadas** no GitHub. |
@@ -122,7 +122,7 @@ flowchart LR
 
 | | |
 |---|---|
-| **Evidência** | Commits no histórico local: `6d2eeae` (**2025-11-02**, mensagem `1101`) e `dc87c85` (**2025-11-09**, mensagem `1109`) — dezenas de arquivos em `WebAgent/WebWatcher/infer/` (ex.: `evaluate_hle_official.py`, `agent_eval.py`, ajustes em `vl_search_image.py`). Merge [PR #208](https://github.com/Alibaba-NLP/DeepResearch/pull/208) `merge-webwatcher` em **2025-11-10** (`488032a`). Nenhuma mensagem referencia `#88`. Print sugerido: `assets/parte1/commit-dc87c85-stat.png` ou diff do PR #208. |
+| **Evidência** | Commits no histórico local: `6d2eeae` (**2025-11-02**, mensagem `1101`) e `dc87c85` (**2025-11-09**, mensagem `1109`) — dezenas de arquivos em `WebAgent/WebWatcher/infer/` (ex.: `evaluate_hle_official.py`, `agent_eval.py`, ajustes em `vl_search_image.py`). Merge [PR #208](https://github.com/Alibaba-NLP/DeepResearch/pull/208) `merge-webwatcher` em **2025-11-10** (`488032a`). Nenhuma mensagem referencia `#88`. Evidências visuais: [pr-208-merge](../assets/parte1/README.md#pr-208-merge), [commit-dc87c85-stat](../assets/parte1/README.md#commit-dc87c85-stat). |
 | **Diagnóstico** | Aqui ocorre a **mudança técnica pesada** que a issue pedía desde setembro. Mensagens de commit opacas (`1101`, `1109`) prejudicam auditoria forense; o vínculo com a demanda pública (#88) só pode ser inferido por data e pasta, não por metadados Git. |
 | **Recomendação** | Padronizar commits/PRs com referência `Closes #88` quando aplicável; mensagens descritivas (`feat(webwatcher): release infer scripts and eval`). |
 | **Risco** | **Médio** — código existe, mas **rastreabilidade reversa** (issue → commit) continua fraca para terceiros. |
@@ -133,7 +133,7 @@ flowchart LR
 
 | | |
 |---|---|
-| **Evidência** | [#88 fechada 2025-11-09](https://github.com/Alibaba-NLP/DeepResearch/issues/88#issuecomment-3508499255): [@ornamentt](https://github.com/ornamentt) (COLLABORATOR): *“在webagent/webwatcher这个文件夹里”*. Em seguida [@wangxinyu0922](https://github.com/wangxinyu0922): *“Hi all, the inference code of WebWatcher has now released!”* (**2025-11-10**). [PR #226](https://github.com/Alibaba-NLP/DeepResearch/pull/226) (**2025-12-17**): *“fix the bug of missing images”*, branch `webwatcher1217`, 8 arquivos, 0 reviews — eco da cadeia de assets do benchmark. Print: `assets/parte1/issue-88-fechamento.png`. |
+| **Evidência** | [#88 fechada 2025-11-09](https://github.com/Alibaba-NLP/DeepResearch/issues/88#issuecomment-3508499255): [@ornamentt](https://github.com/ornamentt) (COLLABORATOR): *“在webagent/webwatcher这个文件夹里”*. Em seguida [@wangxinyu0922](https://github.com/wangxinyu0922): *“Hi all, the inference code of WebWatcher has now released!”* (**2025-11-10**). [PR #226](https://github.com/Alibaba-NLP/DeepResearch/pull/226) (**2025-12-17**): *“fix the bug of missing images”*, branch `webwatcher1217`, 8 arquivos, 0 reviews — eco da cadeia de assets do benchmark. Evidência visual: [issue-88-fechamento](../assets/parte1/README.md#issue-88-fechamento). Contraste A1: [pr-233-linked](../assets/parte1/README.md#pr-233-linked). |
 | **Diagnóstico** | O fechamento **não** aponta PR nem commit; é orientação de caminho + anúncio. Um auditor que parta só da #88 não vê automaticamente o merge #208 na timeline da issue (GitHub “Development” vazio). A correção de imagens (**dezembro**) mostra que o “release” de novembro ainda estava incompleto para reprodução fiel do benchmark. |
 | **Recomendação** | Ao fechar, comentar com links: PR #208, commits principais, seção do README com quick start. Publicar **release note** ou tag `webwatcher-infer-v1`. |
 | **Risco** | **Alto** — reprodutibilidade e GRE: requisito “código disponível” fica dependente de interpretação humana dos comentários. |
@@ -173,19 +173,20 @@ flowchart LR
 
 ---
 
-## 6. Checklist de evidências (prints)
+## 6. Galeria de evidências visuais
 
-| Arquivo | Conteúdo a capturar |
-|---------|---------------------|
-| `assets/parte1/issue-88-abertura.png` | Título, autor, data de abertura |
-| `assets/parte1/issue-88-comentario-set.png` | Comentário de 2025-09-08 (inferência “este mês”) |
-| `assets/parte1/issue-88-comentario-out.png` | Cobrança de 2025-10-21 |
-| `assets/parte1/issue-88-fechamento.png` | Comentários de fechamento nov/2025 |
-| `assets/parte1/pr-80-merge.png` | PR #80 merged, 0 reviews |
-| `assets/parte1/pr-208-merge.png` ou `commit-dc87c85-stat.png` | Entrega `WebAgent/WebWatcher/infer/` |
-| `assets/parte1/pr-233-linked.png` | (Opcional) Contraste — sidebar “Linked issues” no PR #233 |
+Todas as capturas estão em **[assets/parte1/README.md](../assets/parte1/README.md)** (galeria com âncoras por seção):
 
-Instruções detalhadas: [assets/parte1/README.md](../assets/parte1/README.md).
+| Seção | Conteúdo |
+|-------|----------|
+| [issue-88-abertura](../assets/parte1/README.md#issue-88-abertura) | Abertura da issue |
+| [issue-88-comentario-set](../assets/parte1/README.md#issue-88-comentario-set) | Promessa de inferência (set/2025) |
+| [issue-88-comentario-out](../assets/parte1/README.md#issue-88-comentario-out) | Cobrança de prazo (out/2025) |
+| [issue-88-fechamento](../assets/parte1/README.md#issue-88-fechamento) | Fechamento (nov/2025) |
+| [pr-80-merge](../assets/parte1/README.md#pr-80-merge) | PR #80 sem review |
+| [pr-208-merge](../assets/parte1/README.md#pr-208-merge) | Merge WebWatcher |
+| [commit-dc87c85-stat](../assets/parte1/README.md#commit-dc87c85-stat) | Estatísticas do commit |
+| [pr-233-linked](../assets/parte1/README.md#pr-233-linked) | Contraste com trilha forte (A1) |
 
 ---
 

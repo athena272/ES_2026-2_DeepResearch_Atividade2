@@ -1,6 +1,6 @@
 # Trecho para o Relatório Técnico (PDF) — Parte 1
 
-> Copie as seções abaixo para o capítulo **Eixo A — GPR (Arqueologia de Issues)** do PDF. Ajuste numeração conforme o template da equipe. Figuras: colocar prints de `assets/parte1/` quando disponíveis.
+> Copie as seções abaixo para o capítulo **Eixo A — GPR (Arqueologia de Issues)** do PDF. Ajuste numeração conforme o template da equipe. Figuras: exportar do [assets/parte1/README.md](../assets/parte1/README.md) (galeria no GitHub) ou inserir capturas no Word/LaTeX.
 
 ---
 

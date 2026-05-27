@@ -37,7 +37,7 @@
 
 <img width="802" height="663" alt="image" src="https://github.com/user-attachments/assets/8df0c196-89f6-4fd5-a975-7f148e8d8a4c" />
 
-## ommit-dc87c85-stat
+## commit-dc87c85-stat
 
 <img width="1410" height="590" alt="image" src="https://github.com/user-attachments/assets/c6917aa4-aefa-4ef5-a689-27ab4450159d" />
 
@@ -47,5 +47,7 @@
 
 ## Status
 
-- [ ] Prints capturados e commitados no repositório da Atividade 2
-- [ ] Figuras referenciadas no PDF final da equipe
+- [x] Evidências visuais publicadas neste README (anexos via GitHub)
+- [ ] Figuras exportadas para o PDF final da equipe (copiar imagens ou capturar do GitHub)
+
+**Nota:** as imagens usam URLs `github.com/user-attachments/assets/...`. Elas renderizam ao abrir este repositório no GitHub. Para o PDF, exporte cada captura ou salve os arquivos como `.png` na mesma pasta, se o template exigir arquivos locais.
